@@ -42,11 +42,11 @@ from text_processing import tokenize,  prepare_sample_data
 # args = parse_args()
 
 
-netgpath = "/home/pria/Desktop/jugaad/DF-GAN Deploy/app/models/netG.pth"
-textencoderpath = "/home/pria/Desktop/jugaad/DF-GAN Deploy/app/models/text_encoder200.pth"
+netgpath = "app/models/netG.pth"
+textencoderpath = "app/models/text_encoder200.pth"
 
 # now we have to preprocess my input caption as per model requirements
-pickle_path = "/home/pria/Desktop/jugaad/DF-GAN Deploy/app/models/captions_DAMSM.pickle"
+pickle_path = "app/models/captions_DAMSM.pickle"
 
 def build_word_dict(pickle_path):
     with open(pickle_path, 'rb') as f:
